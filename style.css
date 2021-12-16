@@ -118,6 +118,14 @@ li {
           align-items: center;
 }
 
+.nav__list a {
+  font-weight: bold;
+}
+
+.nav__list a:hover {
+  color: white;
+}
+
 .login {
   display: inline-block;
   font-size: 1.7rem;
@@ -228,12 +236,14 @@ li {
 
 .btn {
   display: inline-block;
-  border: 1px solid var(--grey);
+  border: none;
   padding: 1rem 1.8rem;
-  color: var(--black);
+  color: var(--orange);
   font-weight: 500;
   font-size: 1.7rem;
   cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -241,7 +251,8 @@ li {
 .btn:hover {
   background-color: var(--orange);
   color: var(--white);
-  border: 1px solid var(--orange);
+  font-weight: bold;
+  border: none;
 }
 
 .price {
@@ -460,6 +471,7 @@ footer {
 footer b:hover, footer p:hover, footer h1:hover {
   color: var(--white);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .f-box {
@@ -520,6 +532,10 @@ footer b:hover, footer p:hover, footer h1:hover {
           transform: translate(-50%, -50%);
 }
 
+.messenger .message-icons div:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1200px) {
   footer {
     padding: 0 0 20px 100px;
@@ -531,6 +547,7 @@ footer b:hover, footer p:hover, footer h1:hover {
   }
   footer b:hover, footer p:hover, footer h1:hover {
     color: var(--white);
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */
